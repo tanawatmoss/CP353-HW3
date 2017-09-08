@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <script src='build/main.bundle.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+    <style> body , .card-body {
+        background-color: white
+        
+      
+    }</style>
+
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header text-center">
+      <h2>Beers</h2>
+      <style> .card-header{
+        background-color :cadetblue
+        
+  }</style>
+    </div>
+    <div class="card-body">
+      
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <input type="text" id="beer-name" class="form-control" placeholder="Search name of beers"><br>
+          <input type="text" id="beer-yeast" class="form-control" placeholder="Search yeast of beers">
+          <br>
+          <button onclick="toSearch(document.getElementById('beer-name').value,document.getElementById('beer-yeast').value)" class="btn btn-primary" >Search</button>
+          <style> .col-3 {
+                text-align: center
+                
+            }
+            
+              </style>
+        </div>
+      </div>
+      <br>
+      <p id="result"  style=" text-align: center"></p>
+
+    
+</body>
+
+</html>
